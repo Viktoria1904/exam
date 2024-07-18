@@ -1,11 +1,50 @@
 @media(max-width: 1281px) {
+
+    .card_image img {
+        width: 80%;
+    }
+
+    .card_value {
+        flex-direction: column;
+    }
+
+    .card_name {
+        text-align: center;
+    }
+
+    header .container {
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .promo__title {
+        width: 50%;
+    }
+
     .banners__item1_title,
     .banners__item2_title {
         width: 60%;
     }
 
+    .about__image {
+        background-size: contain;
+    }
+
+    .offers__caption {
+        justify-content: center;
+        gap: 100px;
+    }
+
     .eco__case {
         padding: 20px 20px 5px 30px;
+    }
+
+    .categories__col {
+        width: 400px;
+    }
+
+    .categories__col_text {
+        padding: 30px 40px;   
     }
 
     .subscribe__newsletter_form input {
@@ -15,69 +54,11 @@
 }
 
 @media(max-width: 1153px) {
-
-    .promo__title {
-        width: 50%;
-    }
-    
-    .card_value_price {
-        gap: 5px;
-    }
-
+ 
     .banners__item1_title,
     .banners__item2_title {
         width: 70%;
     }
-    
-    .about__image {
-        background-size: contain;
-    }
-
-    .about__desk_title,
-    .eco__case_title {
-        width: 80%;
-    }
-
-    .eco .container {
-        padding: 0;
-    }
-
-    .eco__case_ttl.first,
-    .eco__case_ttl,
-    .eco__case {
-        margin-top: 0;
-    }
-
-    .subscribe__newsletter {
-        flex-direction: column;
-    }
-    
-    .subscribe__newsletter_title {
-        width: 100%;
-        text-align: center;
-    }
-
-    .offers .container {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
-
-@media(max-width: 1025px) {
-       
-    .header__nav,
-    .header__nav_list {
-        gap: 20px;
-    }
-
-    .promo__title {
-        width: 70%;
-    }
-
-    .about__desk_title,
-    .eco__case_title {
-        width: 95%;
-    } 
 
     .info__counters_list {
         width: 190px;
@@ -89,36 +70,462 @@
         height: 180px;
     }
 
+    .about__desk_title,
+    .eco__case_title {
+        width: 95%;
+    } 
+    
     .eco__case {
         margin-left: -300px;
-    }  
-    
-}  
+    } 
 
-@media(max-width: 800px) {
+    .subscribe__newsletter {
+        flex-direction: column;
+    }
+    
+    .subscribe__newsletter_title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer__inform {
+        width: 45%;
+    }
+
+}
+
+@media(max-width: 1025px) {
+
+    header .container,
+    .header__nav {
+        gap: 60px;
+    }    
+    
+    .header__nav_toggle {
+        display: block;
+    }
+
+    .header__nav_list {
+        display: block;
+        background-color: rgba(126, 182, 147,0.9);
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: 999;
+        padding: 5% 5%;
+
+        transform: translateX(0%);
+        animation: toLeft 0.5s linear 1 forwards;
+    }
+
+    .header__nav_list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .header__nav_link {
+        color: #fff;
+    }   
+     
+    .promo__title {
+        width: 70%;
+    }
+
     .banners__item1_title,
     .banners__item2_title {
         width: 90%;
     }
-}
 
+    .about__desk {
+        margin-left: -60px;
+    }
 
-@media(max-width: 769px) {
+    .products_cards,
+    .offers__cards {
+        gap: 10px;
+    }
+          
+    .card_value_price {
+        gap: 5px;
+    }
+
+    .about__desk_title,
+    .eco__case_title {
+        width: 80%;
+    }
+
+    .eco__case {
+        width: 70%;
+    }
+
+    .eco__case_ttl {
+        margin-top: 5px;
+    }
+
+}  
+
+@media(max-width: 800px) {
+
+    .btn {
+        padding: 10px;
+    }
+
+    .card_value_price {
+        flex-direction: column;
+    }
+
+    .subtitle,
+    .promo__subtitle,
+    .banners__item1_subtitle,
+    .banners__item2_subtitle {
+        font-size: 28px;
+        line-height: 50px;
+    }
     
+    .title,
+    .banners__item1_title,
+    .banners__item2_title,
+    .info__counters_list_num,
+    .subscribe__newsletter_title {
+        font-size: 38px;
+        line-height: 60px;
+    }
+    
+    .promo .container {
+        height: 500px;
+    }
+
+    .promo__title {
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    .banners .container,
+    .about .container,
+    .info .container {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    } 
+
+    .banners .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banners__item1,
+    .banners__item2 {   
+        width: 70%;
+        height: auto;
+    }
+
+    .about .container {
+        flex-direction: column;
+    }
+
+    .about__desk {
+        width: 90%;
+        margin-left: 0;
+    }
+        
+    .products .container,
+    .info__testimonal {
+        padding: 30px;
+    }
+
+    .products_cards,
+    .info__testimonal_foto,
+    .info__counters {
+        margin-top: 40px;
+    }
+
+    .info__testimonal {
+        width: 100%;
+    }
+
+    .info__counters {
+        flex-wrap: wrap;
+    }
+   
+
+    .offers .container {
+        padding: 70 px 0;
+    }
+
+    .offers__caption {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .eco .container {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .eco__image img {
+        width: 50%;
+    }
+
+    .eco__case {
+        margin-left: 0;
+    }
+    .eco__case_ttl.first,
+    .eco__case_ttl,
+    .eco__case {
+        margin-top: 0;
+    }
+    .footer .container {
+        padding: 50px 0;
+    }    
+}
+    
+@media(max-width: 769px) {
+   
+    .categories__col {
+        width: 30%;
+        height: 300px;
+    }
+
+    .categories__col_text {
+        padding: 10px 20px;    
+        border-radius: 10px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .subscribe__newsletter_title {
+        width: 100%;
+    }
+
+    .subscribe__newsletter_form {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media(max-width: 640px) {
+
+    .subscribe__newsletter_title,
+    .footer__contact_title,
+    .footer__utility_title {
+        font-size: 24px;
+    }
+
+    .subscribe__newsletter_form input::placeholder,
+    .footer__contact_item,
+    .footer__utility_pages_link {
+        font-size: 16px;
+    }  
    
+    .subscribe__newsletter {
+        padding: 40px 20px;
+    }
+
+    .footer__contact,
+    .footer__utility_pages,
+    .footer__inform {
+        gap: 15px;
+    }
+
+    .footer__inform_social {
+        gap: 5px;
+    }
 }
 
 @media(max-width: 480px) {
-   
-}
 
-@media (max-width: 426px) {
+    .card {
+        width: 45%;
+    }
+
+    header .container,
+    .header__nav {
+        gap: 30px;
+    }
+
+    header .container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .header__cart {
+        margin-left: auto;
+    }
+
+    .header__nav_toggle,
+    .header__cart_btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .header__nav_toggle {
+       background-size: 25px 25px;
+    }
+
+    .subtitle,
+    .promo__subtitle,
+    .banners__item1_subtitle,
+    .banners__item2_subtitle {
+        font-size: 20px;
+        line-height: 50px;
+    }
+    
+    .title,
+    .banners__item1_title,
+    .banners__item2_title,
+    .info__counters_list_num,
+    .subscribe__newsletter_title {
+        font-size: 28px;
+        line-height: 60px;
+    }
+    
+    .text,
+    .btn_text,
+    .info__counters_list_text,
+    .footer__contact_item,
+    .footer__utility_pages_link  {
+        font-size: 16px;
+        line-height: 32.4px;
+    }
+    
+    .promo .container {
+        height: 400px;
+    }
+
+    .promo__title {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .banners .container,
+    .about .container,
+    .info .container,
+    .offers .container,
+    .categories .container {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    } 
+
+    .banners__item1,
+    .banners__item2 {   
+        width: 90%;
+    }
+
+    .offers__caption {
+        gap: 10px;
+    }
+    
+    .categories__col {
+        width: 30%;
+        height: 200px;
+    }
+
+    .categories__col_text {
+        padding: 5px 10px;    
+        border-radius: 10px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .subscribe__newsletter_title,
+    .footer__contact_title,
+    .footer__utility_title {
+        font-size: 20px;
+    }
+
+    .subscribe__newsletter_form input::placeholder,
+    .footer__contact_item,
+    .footer__utility_pages_link {
+        font-size: 14px;
+    }  
    
+    .subscribe__newsletter_form input {
+        width: 280px;
+        padding: 15px 40px 15px 20px;
+    }
+
+    footer .container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer__inform {
+        width: 90%;
+        padding: 0;    
+        border-left: 0;
+        border-right: 0;
+    }
 }
 
 @media(max-width: 320px) {
+    .promo__title {
+        width: 100%;
+    }
+
+    .promo .container {
+        gap: 10px;
+    }
    
+    .subtitle,
+    .promo__subtitle,
+    .banners__item1_subtitle,
+    .banners__item2_subtitle {
+        font-size: 18px;
+        line-height: 34px;
+    }
+    
+    .title,
+    .banners__item1_title,
+    .banners__item2_title,
+    .info__counters_list_num,
+    .subscribe__newsletter_title {
+        font-size: 24px;
+        line-height: 50px;
+    }
+    
+    .text,
+    .btn_text,
+    .info__counters_list_text,
+    .footer__contact_item,
+    .footer__utility_pages_link  {
+        font-size: 14px;
+        line-height: 28px;
+    }
+   
+    .promo__title {
+        font-size: 32px;
+        line-height: 50px;
+    }
+
+    .banners__item1,
+    .banners__item2,
+    .banners__item1_title,
+    .banners__item2_title,
+    .about__desk_title,
+    .about__desk,
+    .info__testimonal,
+    .eco__case,
+    .eco__case_title, 
+    .subscribe .container {
+        width: 100%;
+        padding: 3%;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .products_cards,
+    .categories .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categories__col {
+        width: 60%;
+    }   
+
 }

@@ -15,7 +15,7 @@ ul, ol {
 }
 
 .container {
-    max-width: 1440px;
+   /* max-width: 1440px;*/
     margin: 0 auto;
     padding: 0 30px;
 }
@@ -165,6 +165,60 @@ header .container {
 .header__nav {
     display: flex;
     gap: 120px;    
+}
+
+.header__nav_toggle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #274C5B;
+    background-image: url(/images/ico_toogle.png);
+    background-repeat: no-repeat;
+    background-position: center;  
+    background-size: 35px 35px;
+    border-color: transparent;
+    cursor: pointer;
+
+    position: relative;   
+}
+
+#header__nav_toggle,
+.header__nav_toggle {
+	display: none;
+}
+
+.header__nav_close {
+	position: absolute;
+	border: 0;
+	background-color: transparent;
+	width: 30px;
+	height: 30px;
+	border-radius: 6px;
+	color: #fff;
+	top: 1%;
+	right: 5%;
+	opacity: 0.8;
+}
+
+.header__nav_close::before {
+	content: '+';
+
+	display: block;
+	font-size: 38px;
+	transform: rotate(45deg);
+}
+
+.header__nav_close label,
+.header__nav_toggle label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#header__nav_toggle:checked ~ .header__nav {
+	display: block;
 }
 
 .header__nav_list {
@@ -475,6 +529,7 @@ header .container {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .eco .container {
@@ -501,7 +556,7 @@ header .container {
 }
 
 .eco__case_title {
-    width: 50%;
+    width: 70%;
 }
 
 .eco__case_ttl {
@@ -555,6 +610,7 @@ header .container {
     font-size: 24px;
     line-height: 35px;
 }
+
 .subscribe__newsletter {
     padding: 100px 70px;
     background-image: url(/images/subscribe_bg.png);
@@ -569,7 +625,7 @@ header .container {
 }
 
 .subscribe__newsletter_title {
-    width: 50%;
+    width: 35%;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-size: 50px;
@@ -583,7 +639,8 @@ header .container {
 }
 
 .subscribe__newsletter_form input {
-    padding: 25px 100px 25px 30px;
+    width: 350px;
+    padding: 25px 80px 25px 30px;
     border-color: transparent;
     border-radius: 16px;
 }

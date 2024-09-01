@@ -1,0 +1,17 @@
+@keyframes toRight {
+    form {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes toLeft {
+    form {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

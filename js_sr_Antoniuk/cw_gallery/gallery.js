@@ -15,39 +15,49 @@ const gallery = function() {
 
         return elem;
     };
-let elem = create();
-console.log(elem);
+
     let remove = function() {
-        console.log('remove');  
+        
+        let itemBlock = document.querySelector('.blockBg');
+        itemBlock.remove();
+
+        let itemBtn = document.querySelector('.close');
+        itemBtn.remove();
     };
 
     let show = function(content = null, src = null, type = null) {
-        //remove();
-        // let elems= create();
+        let elem= create();
 
-        
+        if (type == 'photo' && src) {
+            let imgElem = document.createElement('img');
+            imgElem.src = src;
+            content = imgElem.outerHTML;
 
-        console.log('show'); 
+            if (content) {
+                let contentElem = elem.querySelector('.blockBg');
+                contentElem.innerHTML = content;
+            };
+
+        };
+
+        document.body.append(elem);
+
     };
 
     let action = function(event) {
         event.preventDefault();
-
+        
         let elem = event.target.closest('.thumbs');
 
         if (elem.tagName == 'A') {
             if (elem.children[0] && elem.children[0].tagName == 'IMG') {
                 let href = elem.href;
             
-                if (href) return;
+                if (!href) return;
 
                 show(null,href,'photo');
-
-
             };
         };
-
-
     };
 
     let elems = document.querySelectorAll('.gallery img');
@@ -60,4 +70,4 @@ console.log(elem);
 
 };
 
-gallery('gallery'); 
+gallery(); 

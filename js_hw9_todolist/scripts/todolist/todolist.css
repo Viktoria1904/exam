@@ -1,0 +1,118 @@
+.todolist {
+    width: 40%;
+    min-width: 400px;
+    
+    background-color: #fff;
+    border: 2px solid #666;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0px #999;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.todolist__title {
+    font-size: 36px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    background-color: cornflowerblue;  
+    border: 2x solid cornflowerblue;
+    border-radius: 5px;  
+    padding: 30px;  
+}
+
+.todolist__form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    
+}
+
+.todolist__form_btn {
+    border: 0;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-image: url("/images/plus.png");
+    cursor: pointer;
+    margin: 0;
+}
+
+.todolist__form input{
+    /* min-width: 300px; */
+    padding: 15px;  
+    border-radius: 5px;
+    border-color: cornflowerblue;
+    box-shadow: 0 0 5px 0 cornflowerblue;
+    font-size: 20px;
+}
+
+.todolist__form input::placeholder {
+    font-size: 20px;
+    font-style: italic;
+    color: cornflowerblue;
+}
+
+.todolist__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 20px;
+    font-size: 24px;
+}
+
+.todolist__item {
+    display: flex;
+    justify-content: space-between;   
+    border-bottom: 1px solid #999;
+}
+
+.todolist__item_check {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid cornflowerblue;
+    box-shadow: 0 0 5px 0 cornflowerblue;
+}
+
+.todolist__item_check_mark {
+    width: 40px;
+    display: none;   
+}
+
+.todolist__item_check_mark2 {
+    width: 40px;
+    display: inline-block;   
+}
+
+.todolist__item_task2 {
+    text-decoration: line-through;
+}
+
+.todolist__item_btn {
+    border: 0;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.todolist__item_btns .btn_edit{   
+    background-image: url("/images/edit.png");
+}
+
+.todolist__item_btns .btn_delete{    
+    background-image: url("/images/delete.png");
+}
+
+.todolist__item_btn:hover,
+.todolist__item_check:hover {
+    cursor: pointer;
+}
+

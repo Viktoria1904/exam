@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img, ul, ol, h1, h2, h3, p, button {
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: #ededed;
+    padding: 50px;
+    font-family: arial;
+    font-size: 20px;
+    line-height: 24px;
+}

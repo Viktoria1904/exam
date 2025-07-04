@@ -22,31 +22,28 @@ class Order {
         elemInput.type = 'text';
         elemInput.placeholder = 'Ваш Телефон'
       
-        let elemBtn = document.createElement('button');
-        elemBtn.classList.add('order__form_btn');
-        elemBtn.innerHTML = 'Записаться';
-      
-        
-        elemForm.append(elemInput,elemBtn);
-        elemContent.append(elemTitle,elemText1,elemForm);
         elem.append(elemContainer);
+        elemContainer.append(elemTitle,elemText,elemForm);
+        elemForm.append(elemInput);
+        
+       
 
-		return [elem, elemContent];
+		return [elem, elemContainer,elemForm];
 	}
 
-    // createBtn() {
-    //     let elemBtn = document.createElement('button');
-	// 	elemBtn.classList.add('advertising__btn', 'btn');
-    //     elemBtn.innerHTML='Заказать Кухню';
+    createBtn() {
+     let elemBtn = document.createElement('button');
+        elemBtn.classList.add('order__form_btn');
+        elemBtn.innerHTML = 'Записаться';
         
-    //     return elemBtn;
-    // }
+        return elemBtn;
+    }
 
 	init() {
 		let elems = this.create();
-        // let elemBtn = this.createBtn();
+        let elemBtn = this.createBtn();
 
-		// if (elemBtn) elems[1].append(elemBtn);		
+		if (elemBtn) elems[2].append(elemBtn);		
 
 		return elems;
 	}

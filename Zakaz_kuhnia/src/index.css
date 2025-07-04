@@ -528,3 +528,60 @@ body {
 	padding: 0 15px 30px 15px;
 }
 
+.order {	
+	background-color: #ffcc29;
+	margin-top: 60px;
+	background-image: url('/src/images/order_img.png');
+}
+
+.order .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+	height: 400px;	
+}
+
+.order__title {
+	width: 70%;
+	font-family: "Playfair Display", serif;
+	font-size: 43px;
+	line-height: 52px;
+	font-weight: 500;
+	text-align: center;
+}
+
+.order__text {
+ 	font-weight: normal;
+}
+
+.order__text span {
+	font-weight: bold;
+}
+
+.order__form {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.order__form_input {
+	width: 350px;
+	border: 0;
+	border-radius: 30px;
+}
+
+.order__form_input::placeholder {
+	padding-left: 30px;
+}
+
+.order__form_btn {
+	padding: 15px 30px;
+	border: 0;
+	border-radius: 30px;
+	background: #39373A;
+	color: #fff;
+}
+
+

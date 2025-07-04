@@ -8,7 +8,8 @@ import {order} from './Order.js';
 
 import {stages} from './Stages.js';
 import {employees} from './Employees.js';
-// import {info} from './Info.js';
+import {info} from './Info.js';
+
 
 
 //import { main, mainContainer, mainTitle } from '../layouts/Main.js';
@@ -126,7 +127,8 @@ class App {
 		if (order) this.elem.append(order);
 		if (stages) this.elem.append(stages);
 		if (employees) this.elem.append(employees);
-		// if (info) this.elem.append(info);
+		if (info) this.elem.append(info);
+		if (order) this.elem.append(order);
 		
 		// if (footer) this.elem.append(footer);
 

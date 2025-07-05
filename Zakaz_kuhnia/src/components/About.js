@@ -14,20 +14,25 @@ class About {
 		elemList.classList.add('about__list');
 
 		elemList.innerHTML = `
-			<li class="about__list_item about__list_item1">                
+			<li class="about__list_item"> 
+				<img class="about__list_img" src="/src/images/about_img1.png" alt="#"/>                
                 <p class="about__list_text">Получите Консультацию И <span> Эскиз Мебели </span></p>
 			</li>
-			<li class="about__list_item about__list_item2">
-				Подберем Материалы <span>Сочетая Цену И Качество</span>
+			<li class="about__list_item">
+				<img class="about__list_img" src="/src/images/about_img2.png" alt="#"/>  
+				<p class="about__list_text">Подберем Материалы <span>Сочетая Цену И Качество</span></p>
 			</li>
-			<li class="about__list_item about__list_item3">
-				Подберем Фурнитуру Для <span>Удобства И Комфорта</span>
+			<li class="about__list_item">
+				<img class="about__list_img" src="/src/images/about_img3.png" alt="#"/>  
+				<p class="about__list_text">Подберем Фурнитуру Для <span>Удобства И Комфорта</span></p>
 			</li>
-			<li class="about__list_item about__list_item4">
-				Разработаем <span>Бесплатно 3D</span> Проект
+			<li class="about__list_item">
+				<img class="about__list_img" src="/src/images/about_img4.png" alt="#"/>  
+				<p class="about__list_text">Разработаем <span>Бесплатно 3D</span> Проект</p>
 			</li>	
-            <li class="about__list_item about__list_item5">
-				Поможем <span>Сэкономить 20%</span> От Стоимости
+            <li class="about__list_item">
+				<img class="about__list_img" src="/src/images/about_img5.png" alt="#"/>  
+				<p class="about__list_text">Поможем <span>Сэкономить 20%</span> От Стоимости</p>
 			</li>
 		`;
         

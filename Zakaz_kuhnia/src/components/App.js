@@ -1,19 +1,12 @@
 import { header } from '../layouts/Header.js';
-import {promo} from './Promo.js';
-import {about} from './About.js';
+import { payment } from './Payment.js';
 
-import {advantages} from './Advantages.js';
-import {advertising} from './Advertising.js';
-import {order} from './Order.js';
-
-import {stages} from './Stages.js';
-import {employees} from './Employees.js';
-import {info} from './Info.js';
-
+import { order } from '../layouts/Order.js';
+import { footer } from '../layouts/Footer.js';
 
 
 //import { main, mainContainer, mainTitle } from '../layouts/Main.js';
-//import { footer } from '../layouts/Footer.js';
+//
 
 //import { cartUpdate } from './Cart.js';
 
@@ -118,19 +111,11 @@ class App {
 		let headElems = this.createHead();
 
 		if (header) this.elem.append(header);
-		if (promo) this.elem.append(promo);
-		if (about) this.elem.append(about);
-		
-		
-		if (advantages) this.elem.append(advantages);
-		if (advertising) this.elem.append(advertising);
+
+		if (payment) this.elem.append(payment);
+
 		if (order) this.elem.append(order);
-		if (stages) this.elem.append(stages);
-		if (employees) this.elem.append(employees);
-		if (info) this.elem.append(info);
-		if (order) this.elem.append(order);
-		
-		// if (footer) this.elem.append(footer);
+		if (footer) this.elem.append(footer);
 
 		document.head.append(headElems.charset, headElems.view, headElems.title, headElems.css, headElems.media, headElems.font);
 		document.body.append(this.elem);

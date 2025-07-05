@@ -41,7 +41,7 @@ class Header {
 				<a class="header__nav_link" href="/#catalog/">Каталог</a>
 			</li>
 			<li class="header__nav_item">
-				<a class="header__nav_link" href="#">Рассрочка</a>
+				<a class="header__nav_link" href="/#payment/">Рассрочка</a>
 			</li>
 			<li class="header__nav_item">
 				<a class="header__nav_link" href="#">Блог</a>

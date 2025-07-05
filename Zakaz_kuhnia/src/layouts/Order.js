@@ -24,15 +24,13 @@ class Order {
       
         elem.append(elemContainer);
         elemContainer.append(elemTitle,elemText,elemForm);
-        elemForm.append(elemInput);
-        
+        elemForm.append(elemInput);    
        
-
 		return [elem, elemContainer,elemForm];
 	}
 
     createBtn() {
-     let elemBtn = document.createElement('button');
+        let elemBtn = document.createElement('button');
         elemBtn.classList.add('order__form_btn');
         elemBtn.innerHTML = 'Записаться';
         

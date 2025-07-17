@@ -1,11 +1,22 @@
 import { header } from '../layouts/Header.js';
+// import { promo } from './Promo.js';
+import { about } from './About.js';
+import { catalog } from './Catalog.js';
 import { payment } from './Payment.js';
+
+import { advantages } from './Advantages.js';
+import { advertising } from './Advertising.js';
+import { missiia } from './Missiia.js';
+import { stages } from './Stages.js';
+import { employees } from './Employees.js';
+import { info } from './Info.js';
+
 
 import { order } from '../layouts/Order.js';
 import { footer } from '../layouts/Footer.js';
 
 
-//import { main, mainContainer, mainTitle } from '../layouts/Main.js';
+import { main, mainContainer, mainTitle } from '../layouts/Main.js';
 //
 
 //import { cartUpdate } from './Cart.js';
@@ -55,55 +66,55 @@ class App {
 		};
 	}
 
-	// router() {
-	// 	let getPage = async () => {
-	// 		let page;
+	router() {
+		let getPage = async () => {
+			let page;
 
-	// 		let hash = location.hash;
+			let hash = location.hash;
 
-	// 		if (!hash) {
-	// 			page = 'home';
-	// 		} else {
-	// 			hash = hash.slice(1);
+			if (!hash) {
+				page = 'home';
+			} else {
+				hash = hash.slice(1);
 				
-	// 			let hashItems = hash.split('/');
+				let hashItems = hash.split('/');
 
-	// 			if (hashItems[0]) page = hashItems[0];
-	// 		}
+				if (hashItems[0]) page = hashItems[0];
+			}
 			
-	// 		if (!page) page = '404';
+			if (!page) page = '404';
 
-	// 		let timestamp = new Date().getTime();
+			let timestamp = new Date().getTime();
 
-	// 		let elem = await import(`../pages/${page}.js?v=${timestamp}`)
-	// 		.then(module => {
-	// 			mainTitle.innerHTML = '';
-	// 			mainContainer.innerHTML = '';
+			let elem = await import(`../pages/${page}.js?v=${timestamp}`)
+			.then(module => {
+				mainTitle.innerHTML = '';
+				mainContainer.innerHTML = '';
 
-	// 			document.title = module.pageTitle;
+				document.title = module.pageTitle;
 
-	// 			mainTitle.innerHTML = module.pageTitle;
-	// 			mainContainer.append(module.page);
-	// 		})
-	// 	}
+				mainTitle.innerHTML = module.pageTitle;
+				mainContainer.append(module.page);
+			})
+		}
 
-	// 	let links = document.querySelectorAll('a[href="/"]');
+		let links = document.querySelectorAll('a[href="/"]');
 
-	// 	if (links) links.forEach((link) => {
-	// 		link.addEventListener('click', (e) => {
-	// 			e.preventDefault();
+		if (links) links.forEach((link) => {
+			link.addEventListener('click', (e) => {
+				e.preventDefault();
 
-	// 			history.pushState(null, null, '/'); //при нажатии на ссылку на домашнюю страницу очищает адресную строку!
-	// 			getPage();
-	// 		})
-	// 	});
+				history.pushState(null, null, '/'); 
+				getPage();
+			})
+		});
 
-	// 	window.addEventListener('hashchange', (e) => {
-	// 		getPage();
-	// 	})
+		window.addEventListener('hashchange', (e) => {
+			getPage();
+		})
 
-	// 	getPage();		
-	// }
+		getPage();		
+	}
 
 	async render() {
 		if (!this.elem) return;
@@ -112,8 +123,21 @@ class App {
 
 		if (header) this.elem.append(header);
 
-		if (payment) this.elem.append(payment);
+		// if (promo) this.elem.append(promo);
+		// if (about) this.elem.append(about);
+		// if (catalog) this.elem.append(catalog);
+		
+		// if (payment) this.elem.append(payment);	
+		
+		// if (advantages) this.elem.append(advantages);
+		// if (advertising) this.elem.append(advertising);
+		// if (missiia) this.elem.append(missiia);
+		// if (stages) this.elem.append(stages);
 
+		// if (employees) this.elem.append(employees);
+		// if (info) this.elem.append(info);
+		if (main) this.elem.append(main);
+		
 		if (order) this.elem.append(order);
 		if (footer) this.elem.append(footer);
 
@@ -127,7 +151,7 @@ class App {
 
 		//cartUpdate();
 
-		//this.router();
+		this.router();
 	}
 }
 

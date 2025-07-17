@@ -4,7 +4,7 @@ class Main {
 		elem.classList.add('main');
 
 		let elemContainer = document.createElement('div');
-		elemContainer.classList.add('container');
+		elemContainer.classList.add('content');
 
 		elem.append(elemContainer);
 

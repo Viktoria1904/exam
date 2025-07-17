@@ -35,9 +35,9 @@ class Payment {
 		elemText3.classList.add('payment__left_text');
         elemText3.innerHTML = 'Ваш Бюджет € : '
         let elemBudget = document.createElement('input');
-		elemBudget.classList.add('payment__left_input', 'budget');
+		elemBudget.classList.add('payment__left_input');
         elemBudget.placeholder = '3000';
-
+       
         let elemItem4 = document.createElement('li');
 		elemItem4.classList.add('payment__left_item');       
         let elemText4 = document.createElement('p');
@@ -58,12 +58,12 @@ class Payment {
 
         let elemItem6 = document.createElement('li');
 		elemItem6.classList.add('payment__left_item', 'payment__left_item6');       
-        let elemText6 = document.createElement('p');
+        let elemText6 = document.createElement('button');
 		elemText6.classList.add('payment__left_text6');
         elemText6.innerHTML = 'ЕЖЕМЕСЯЧНЫЙ ПЛАТЁЖ:'
         let elemSum = document.createElement('p');
 		elemSum.classList.add('payment__left_sum');
-        elemSum.innerHTML = `450`;
+        elemSum.innerHTML = '450';
 
         let elemItem7 = document.createElement('li');
 		elemItem7.classList.add('payment__left_item7');       
@@ -86,13 +86,6 @@ class Payment {
             <img class="payment__right_img" src="/src/images/payment_img.png" alt="#"/> 
         `;
 
-		// elemList.innerHTML = `
-		// 	<li class="payment__list_item"> 
-		// 		<img class="payment__list_img" src="/src/images/about_img1.png" alt="#"/>                
-        //         <p class="payment__list_text">Получите Консультацию И <span> Эскиз Мебели </span></p>
-		// 	</li>
-			
-		// `;
         
 		elem.append(elemContainer);
         elemContainer.append(elemTitle,elemBlock);
@@ -102,14 +95,14 @@ class Payment {
         elemItem4.append(elemText4,elemMonth);
         elemItem5.append(elemText5,elemInitial);
         elemItem6.append(elemText6,elemSum);
-        elemItem7.append(elemName,elemPhone);
+        elemItem7.append(elemName,elemPhone);     
         
 		return [elem, elemContainer];
 	}
 
     init() {
 		let elems = this.create();
-        
+     
 		return elems;
 	}
 }
